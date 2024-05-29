@@ -145,15 +145,15 @@ const getDomain = async (
     return {
       name,
       version,
-      salt: ethers.utils.zeroPad(ethers.utils.arrayify(137), 32),
-      verifyingContract: ethers.utils.getAddress(erc20ContractAddress),
+      salt: ethers.zeroPad(ethers.getBytes(137), 32),
+      verifyingContract: ethers.getAddress(erc20ContractAddress),
     }
   }
   return {
     name,
     version,
     chainId,
-    verifyingContract: ethers.utils.getAddress(erc20ContractAddress),
+    verifyingContract: ethers.getAddress(erc20ContractAddress),
   }
 }
 

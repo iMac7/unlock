@@ -65,7 +65,7 @@ const run = async () => {
         const gdp = await getGdpForNetwork(provider, network, latestBlockNumber)
         // TODO: consider retrieving value "last week"...
         const rate = await priceConversion(network)
-        const total = parseFloat(ethers.utils.formatUnits(gdp, '18'))
+        const total = parseFloat(ethers.formatUnits(gdp, '18'))
         return {
           id,
           total,
