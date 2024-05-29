@@ -12,9 +12,7 @@ const grantKeys = async (networkId, lockAddress, rawRecipients) => {
     throw new Error('Please set a PRIVATE_KEY environment variable')
   }
 
-  const provider = new ethers.providers.JsonRpcBatchProvider(
-    network.publicProvider
-  )
+  const provider = new ethers.JsonRpcBatchProvider(network.publicProvider)
   const wallet = new ethers.Wallet(process.env.PRIVATE_KEY)
 
   const signer = wallet.connect(provider)
@@ -51,7 +49,7 @@ const grantKeys = async (networkId, lockAddress, rawRecipients) => {
     try {
       const [recipient, expiration, manager] = rawRecipients[i].split(',')
 
-      const address = await new ethers.providers.JsonRpcBatchProvider(
+      const address = await new ethers.JsonRpcBatchProvider(
         networks.mainnet.publicProvider
       ).resolveName(recipient)
 

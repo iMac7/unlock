@@ -19,7 +19,7 @@ export const TransferWithAuthorizationTypes = {
 export async function getErc20BalanceForAddress(
   erc20ContractAddress: string,
   address: string,
-  provider: ethers.providers.Provider
+  provider: ethers.Provider
 ) {
   const contract = new ethers.Contract(erc20ContractAddress, erc20abi, provider)
   const balance = await contract.balanceOf(address)
@@ -33,7 +33,7 @@ export async function getErc20BalanceForAddress(
  */
 export async function getErc20Decimals(
   erc20ContractAddress: string,
-  provider: ethers.providers.Provider
+  provider: ethers.Provider
 ) {
   const contract = new ethers.Contract(erc20ContractAddress, erc20abi, provider)
   let decimals
@@ -54,7 +54,7 @@ export async function getErc20Decimals(
  */
 export async function getErc20TokenSymbol(
   erc20ContractAddress: string,
-  provider: ethers.providers.Provider
+  provider: ethers.Provider
 ) {
   // The SAI contract has its symbol not implemented
   if (erc20ContractAddress.toLowerCase() === SAI_ADDRESS) {
@@ -81,7 +81,7 @@ export async function getErc20TokenSymbol(
 export async function getAllowance(
   erc20ContractAddress: string,
   lockContractAddress: string,
-  provider: ethers.providers.Provider,
+  provider: ethers.Provider,
   spenderAddress: string
 ) {
   const contract = new ethers.Contract(erc20ContractAddress, erc20abi, provider)
@@ -98,7 +98,7 @@ export async function approveTransfer(
   erc20ContractAddress: string,
   lockContractAddress: string,
   value: unknown,
-  provider: ethers.providers.Provider,
+  provider: ethers.Provider,
   signer: ethers.Signer
 ) {
   const contract = new ethers.Contract(erc20ContractAddress, erc20abi, signer)
@@ -125,7 +125,7 @@ interface TransferAuthorizationMessage {
 const getDomain = async (
   chainId: number,
   erc20ContractAddress: string,
-  provider: ethers.providers.Provider
+  provider: ethers.Provider
 ) => {
   const contract = new ethers.Contract(erc20ContractAddress, erc20abi, provider)
 
@@ -160,7 +160,7 @@ const getDomain = async (
 export async function signTransferAuthorization(
   erc20ContractAddress: string,
   message: TransferAuthorizationMessage,
-  provider: ethers.providers.Provider,
+  provider: ethers.Provider,
   signer: ethers.Signer
 ) {
   const { chainId } = await provider.getNetwork()

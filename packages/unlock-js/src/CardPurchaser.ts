@@ -3,7 +3,7 @@ import { ethers } from 'ethers'
 import { networks as networkConfigs } from '@unlock-protocol/networks'
 import { CardPurchaserABI } from './abis/CardPurchaserABI'
 
-type Signer = ethers.Wallet | ethers.providers.JsonRpcSigner
+type Signer = ethers.Wallet | ethers.JsonRpcSigner
 
 export interface GetContractOptions {
   network: number
@@ -29,7 +29,7 @@ export class CardPurchaser {
     if (!this.networks[network]) {
       throw new Error(`Missing config for ${network}`)
     }
-    return new ethers.providers.JsonRpcBatchProvider(
+    return new ethers.JsonRpcBatchProvider(
       this.networks[network].provider,
       network
     )

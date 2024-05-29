@@ -20391,7 +20391,7 @@ __metadata:
     "@unlock-protocol/networks": "workspace:./packages/networks"
     "@unlock-protocol/types": "workspace:./packages/types"
     eslint: "npm:8.46.0"
-    ethers: "npm:5.7.2"
+    ethers: "npm:6.12.1"
     graphql: "npm:16.8.1"
     graphql-request: "npm:6.1.0"
     hardhat: "npm:2.20.1"
@@ -20402,7 +20402,7 @@ __metadata:
     vitest: "npm:1.6.0"
   peerDependencies:
     axios: 1.4.0
-    ethers: 5.7.2
+    ethers: 6.12.1
   languageName: unknown
   linkType: soft
 

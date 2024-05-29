@@ -14,7 +14,7 @@ export interface TransferObject {
   deadline: number
 }
 
-type Signer = ethers.Signer | ethers.providers.JsonRpcSigner
+type Signer = ethers.Signer | ethers.JsonRpcSigner
 export interface CreateTransferSignatureOptions {
   signer: Signer
   params: TransferObject
@@ -75,7 +75,7 @@ export class KeyManager {
     if (!this.networks[network]) {
       throw new Error(`Missing config for ${network}`)
     }
-    return new ethers.providers.JsonRpcBatchProvider(
+    return new ethers.JsonRpcBatchProvider(
       this.networks[network].provider,
       network
     )
