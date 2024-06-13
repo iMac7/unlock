@@ -19592,6 +19592,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@uniswap/permit2-sdk@npm:^1.3.0":
+  version: 1.3.0
+  resolution: "@uniswap/permit2-sdk@npm:1.3.0"
+  dependencies:
+    ethers: "npm:^5.7.0"
+    tiny-invariant: "npm:^1.1.0"
+  checksum: 10/3f2aaace07b51b06585a2f558f72dbb9ea4b63a52d2c9de1bfc1e733f2f7799083cd6167033685888a12b56f4de7aa7e6a33d9352f1a7a214d6c17bf01519c4a
+  languageName: node
+  linkType: hard
+
 "@uniswap/router-sdk@npm:^1.6.0, @uniswap/router-sdk@npm:^1.9.0, @uniswap/router-sdk@npm:^1.9.2":
   version: 1.9.2
   resolution: "@uniswap/router-sdk@npm:1.9.2"
@@ -19647,6 +19657,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@uniswap/sdk-core@npm:^5.3.0":
+  version: 5.3.0
+  resolution: "@uniswap/sdk-core@npm:5.3.0"
+  dependencies:
+    "@ethersproject/address": "npm:^5.0.2"
+    "@ethersproject/bytes": "npm:^5.7.0"
+    "@ethersproject/keccak256": "npm:5.7.0"
+    "@ethersproject/strings": "npm:5.7.0"
+    big.js: "npm:^5.2.2"
+    decimal.js-light: "npm:^2.5.0"
+    jsbi: "npm:^3.1.4"
+    tiny-invariant: "npm:^1.1.0"
+    toformat: "npm:^2.0.0"
+  checksum: 10/621ad230a585f301c033620995b1ed34d43cc731592e8983961535c7f079726342bc5e2fc35e117e4d946d704a787a0626877115594a236a5a76ca86baa8873d
+  languageName: node
+  linkType: hard
+
 "@uniswap/smart-order-router@npm:3.17.4":
   version: 3.17.4
   resolution: "@uniswap/smart-order-router@npm:3.17.4"
@@ -19676,41 +19703,6 @@ __metadata:
   peerDependencies:
     jsbi: ^3.2.0
   checksum: 10/616138daee6f5df6effbed01113ec3c063b832f53c07add594a6b9b950419c0ae14d89cf89401d495257cabda0d934c380a1c00dba8c5c45e3f37f92af22acbc
-  languageName: node
-  linkType: hard
-
-"@uniswap/smart-order-router@npm:3.28.8":
-  version: 3.28.8
-  resolution: "@uniswap/smart-order-router@npm:3.28.8"
-  dependencies:
-    "@eth-optimism/sdk": "npm:^3.2.2"
-    "@types/brotli": "npm:^1.3.4"
-    "@uniswap/default-token-list": "npm:^11.13.0"
-    "@uniswap/permit2-sdk": "npm:^1.2.0"
-    "@uniswap/router-sdk": "npm:^1.9.0"
-    "@uniswap/sdk-core": "npm:^4.2.0"
-    "@uniswap/swap-router-contracts": "npm:^1.3.1"
-    "@uniswap/token-lists": "npm:^1.0.0-beta.31"
-    "@uniswap/universal-router": "npm:^1.6.0"
-    "@uniswap/universal-router-sdk": "npm:^1.8.2"
-    "@uniswap/v2-sdk": "npm:^4.3.0"
-    "@uniswap/v3-sdk": "npm:^3.11.0"
-    async-retry: "npm:^1.3.1"
-    await-timeout: "npm:^1.1.1"
-    axios: "npm:^0.21.1"
-    brotli: "npm:^1.3.3"
-    bunyan: "npm:^1.8.15"
-    bunyan-blackhole: "npm:^1.1.1"
-    ethers: "npm:^5.7.2"
-    graphql: "npm:^15.5.0"
-    graphql-request: "npm:^3.4.0"
-    lodash: "npm:^4.17.21"
-    mnemonist: "npm:^0.38.3"
-    node-cache: "npm:^5.1.2"
-    stats-lite: "npm:^2.2.0"
-  peerDependencies:
-    jsbi: ^3.2.0
-  checksum: 10/8ed6267fbec769a6006b3b0a9c2348712093b92c980234dfd052b29ce03c261c8e75f01be59a798e806b08ca52b98d62a7aef7ec5d9a07bb87b98c846e33d51a
   languageName: node
   linkType: hard
 
@@ -19749,6 +19741,41 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@uniswap/smart-order-router@npm:3.35.1":
+  version: 3.35.1
+  resolution: "@uniswap/smart-order-router@npm:3.35.1"
+  dependencies:
+    "@eth-optimism/sdk": "npm:^3.2.2"
+    "@types/brotli": "npm:^1.3.4"
+    "@uniswap/default-token-list": "npm:^11.13.0"
+    "@uniswap/permit2-sdk": "npm:^1.3.0"
+    "@uniswap/router-sdk": "npm:^1.9.2"
+    "@uniswap/sdk-core": "npm:^5.3.0"
+    "@uniswap/swap-router-contracts": "npm:^1.3.1"
+    "@uniswap/token-lists": "npm:^1.0.0-beta.31"
+    "@uniswap/universal-router": "npm:^1.6.0"
+    "@uniswap/universal-router-sdk": "npm:^2.2.0"
+    "@uniswap/v2-sdk": "npm:^4.3.2"
+    "@uniswap/v3-sdk": "npm:^3.13.0"
+    async-retry: "npm:^1.3.1"
+    await-timeout: "npm:^1.1.1"
+    axios: "npm:^0.21.1"
+    brotli: "npm:^1.3.3"
+    bunyan: "npm:^1.8.15"
+    bunyan-blackhole: "npm:^1.1.1"
+    ethers: "npm:^5.7.2"
+    graphql: "npm:^15.5.0"
+    graphql-request: "npm:^3.4.0"
+    lodash: "npm:^4.17.21"
+    mnemonist: "npm:^0.38.3"
+    node-cache: "npm:^5.1.2"
+    stats-lite: "npm:^2.2.0"
+  peerDependencies:
+    jsbi: ^3.2.0
+  checksum: 10/343ca8ef3b54ec634b2ecb6efbeae44048d2aa06850b75f5d1b6ecfe4be7f831300daf2c2855510532ca8f596667be7d9814c13196f41acb372c219ffa5d129b
+  languageName: node
+  linkType: hard
+
 "@uniswap/swap-router-contracts@npm:^1.3.0, @uniswap/swap-router-contracts@npm:^1.3.1":
   version: 1.3.1
   resolution: "@uniswap/swap-router-contracts@npm:1.3.1"
@@ -19770,7 +19797,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@uniswap/universal-router-sdk@npm:^1.5.8, @uniswap/universal-router-sdk@npm:^1.8.2":
+"@uniswap/universal-router-sdk@npm:^1.5.8":
   version: 1.9.0
   resolution: "@uniswap/universal-router-sdk@npm:1.9.0"
   dependencies:
@@ -19799,6 +19826,22 @@ __metadata:
     bignumber.js: "npm:^9.0.2"
     ethers: "npm:^5.7.0"
   checksum: 10/e45140f9e2de58823babe62a5795d2ee24074f7e48d774b29a0d917c7b25f9f8bc698bbfe590aa04daee0457624ef7dffa583b5f53d30c5e7dc0e4c77d5e1643
+  languageName: node
+  linkType: hard
+
+"@uniswap/universal-router-sdk@npm:^2.2.0":
+  version: 2.2.0
+  resolution: "@uniswap/universal-router-sdk@npm:2.2.0"
+  dependencies:
+    "@uniswap/permit2-sdk": "npm:^1.3.0"
+    "@uniswap/router-sdk": "npm:^1.9.2"
+    "@uniswap/sdk-core": "npm:^5.3.0"
+    "@uniswap/universal-router": "npm:1.6.0"
+    "@uniswap/v2-sdk": "npm:^4.3.2"
+    "@uniswap/v3-sdk": "npm:^3.13.0"
+    bignumber.js: "npm:^9.0.2"
+    ethers: "npm:^5.7.0"
+  checksum: 10/b5af8519171df0e5b35b021fdf58d714711b2acad94ab3515e998e461fc10bb5df25f3ccf2e6691df4a005f377030b436dc1462940d8d20ab793d0a89f81c410
   languageName: node
   linkType: hard
 
@@ -19930,6 +19973,22 @@ __metadata:
     tiny-invariant: "npm:^1.1.0"
     tiny-warning: "npm:^1.0.3"
   checksum: 10/6d4a12ad725b1343e04ce8c9067dceb1e2fc4abe9c700850fd98e36662cd96952dfc78123e2a7194a692b39cf662c8d756d20ab45e9b1bbba4e693178b1e4623
+  languageName: node
+  linkType: hard
+
+"@uniswap/v3-sdk@npm:^3.13.0":
+  version: 3.13.0
+  resolution: "@uniswap/v3-sdk@npm:3.13.0"
+  dependencies:
+    "@ethersproject/abi": "npm:^5.5.0"
+    "@ethersproject/solidity": "npm:^5.0.9"
+    "@uniswap/sdk-core": "npm:^5.3.0"
+    "@uniswap/swap-router-contracts": "npm:^1.3.0"
+    "@uniswap/v3-periphery": "npm:^1.1.1"
+    "@uniswap/v3-staker": "npm:1.0.0"
+    tiny-invariant: "npm:^1.1.0"
+    tiny-warning: "npm:^1.0.3"
+  checksum: 10/6e60f3ebdd6167255b9a8f4a3e6d04c0f3b758b25b1488d24617db8661ed7a9a692affe6642c3b62ab1c8344f545ba31eb8b82c9bb1fb04cb0b15b58ccc3b65f
   languageName: node
   linkType: hard
 
@@ -20106,7 +20165,7 @@ __metadata:
     "@nomiclabs/hardhat-waffle": "npm:2.0.6"
     "@uniswap/permit2-sdk": "npm:1.2.1"
     "@uniswap/sdk-core": "npm:5.0.0"
-    "@uniswap/smart-order-router": "npm:3.28.8"
+    "@uniswap/smart-order-router": "npm:3.35.1"
     "@uniswap/v3-sdk": "npm:3.11.1"
     "@unlock-protocol/contracts": "workspace:^"
     "@unlock-protocol/networks": "workspace:^"
