@@ -3004,13 +3004,13 @@ paths:
       operationId: getReceiptsStatus
       security:
         - User: []
-      description: Retrieve the status of receipt generation for a lock.
+      description: Retrieve the status of receipts generation for a lock.
       parameters:
         - $ref: '#/components/parameters/Network'
         - $ref: '#/components/parameters/LockAddress'
       responses:
         200:
-          description: Successfully retrieved receipt generation status.
+          description: Successfully retrieved receipts generation status.
           content:
             application/json:
               schema:
